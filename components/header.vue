@@ -3,7 +3,7 @@
 		<NuxtLink to="/"
 			><nuxt-img
 				format="webp"
-				class="mx-auto border-b-4 pb-2 border-light"
+				class="mx-auto border-b-4 pb-2 border-light hover:border-primary"
 				src="/images/logo.png"
 				width="200"
 				height="30"

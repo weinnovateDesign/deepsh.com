@@ -1,6 +1,7 @@
 ---
 title: "A deeper thought on Podcast"
-description: "meta description of the page"
+description: "How productive is listening to podcast"
+slug: "a-deeper-thought-on-podcast"
 publishedDate: "Sep 11, 2021"
 abstract: "Podcasts are becoming a major source of original content - entertainment or educational. But is it just a white noise or adding real value."
 ---

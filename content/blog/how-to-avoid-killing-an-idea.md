@@ -1,7 +1,8 @@
 ---
 title: "How to avoid killing an idea?"
-description: "meta description of the page"
+description: "Taking idea to completion"
 publishedDate: "Apr 19, 2022"
+slug: "how-to-avoid-killing-an-idea"
 abstract: "Writing is the first step towards articulating the idea with your selves. It allows you to review your thoughts and take the moment to revise and refine it before you can share it with the world."
 ---
 
