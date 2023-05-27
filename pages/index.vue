@@ -3,7 +3,12 @@
 		class="container mx-auto py-4 px-4 grid grid-cols-1 lg:grid-cols-2 gap-4"
 	>
 		<figure>
-			<img class="mx-auto rounded-md border" src="/images/deep-sherchan.png" />
+			<nuxt-img
+				format="webp"
+				class="mx-auto rounded-md border"
+				src="/images/deep-sherchan.png"
+				sizes="sm:90vw md:563px"
+			/>
 		</figure>
 		<div>
 			<article class="prose prose-a:text-primary">
