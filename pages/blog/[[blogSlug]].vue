@@ -15,8 +15,11 @@
 			</div>
 			<ContentRenderer :value="doc" />
 		</ContentDoc>
+
 		<h2>Other Articles</h2>
-		<BlogPosts />
+		<FilterBlogPosts :url="route.params.blogSlug" />
 	</div>
 </template>
-<script setup></script>
+<script setup>
+const route = useRoute();
+</script>
