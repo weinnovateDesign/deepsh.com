@@ -7,6 +7,7 @@
 				src="/images/logo.png"
 				width="200"
 				height="30"
+				alt="Deep Sherchan's logo"
 		/></NuxtLink>
 	</header>
 </template>
