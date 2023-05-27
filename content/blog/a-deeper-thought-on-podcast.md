@@ -5,9 +5,9 @@ publishedDate: "Sep 11, 2021"
 abstract: "Podcasts are becoming a major source of original content - entertainment or educational. But is it just a white noise or adding real value."
 ---
 
-I love listening to podcasts. It makes a perfect background for many occasion. But I mostly listen to it while commuting to work. It tends to make my commute feel productive. ... but I am not so sure.
+I love listening to podcasts. It makes a perfect background for many occasions. But I listen to it mostly while commuting to work. It tends to make my commute feel productive. ... but I am not so sure.
 
-There are definitely content creators who add value to our personal and professional life. We learn new ideas and find new ways of thinking. But more importantly, we discover new people - new artists, entrepreneurs, thinkers and scientists. The content that allows us to discover a new set of ideas is the most valuable because it helps us broaden our own perspective and challenge our understanding. We get a chance to iterate on our own belief system and make it better.
+Definitely, there are podcasters who add value to our personal and professional life. We learn new ideas and find new ways of thinking. But more importantly, we discover new people - new artists, entrepreneurs, thinkers and scientists. The content that allows us to discover a new set of ideas is the most valuable because it helps us broaden our own perspective and challenge our understanding. We get a chance to iterate on our own belief system and make it better.
 
 But a few months ago, I noticed that podcasts weren't really adding any value. Basically, I was listening to the same set of people talking about the same things, debating about the same old topics and so on. I wondered why I was even listening.
 
