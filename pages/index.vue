@@ -18,8 +18,8 @@
 				<h1>I’m a B2B Saas Product Consultant.</h1>
 				<div class="text-sm italic">... also an aspiring comic book artist</div>
 				<p>
-					I write about about B2B Software as a Service (Saas), product
-					research, strategy, design, development and everything Saas.
+					I write about B2B Software as a Service (Saas), product research,
+					strategy, design, development and everything Saas.
 				</p>
 
 				<p>
