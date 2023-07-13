@@ -18,14 +18,14 @@
 				<h1>I’m a B2B Saas Product Consultant.</h1>
 				<div class="text-sm italic">... also an aspiring comic book artist</div>
 				<p>
-					I write about B2B Software as a Service (Saas), product research,
-					strategy, design, development and everything Saas.
+					I write about B2B Software as a Service (Saas)> Key topics of interest
+					are product research, strategy, design and development.
 				</p>
 
 				<p>
-					I live in Adelaide, South Australia and work at a B2B tech startup
-					company called BigDataCloud and run a solo design studio on side
-					called DBS Design Studio.
+					Currently living in Adelaide, South Australia and working at a B2B
+					tech startup company called BigDataCloud and run a solo design studio
+					on side called DBS Design Studio.
 				</p>
 
 				<p>
@@ -36,7 +36,7 @@
 				</p>
 
 				<div class="comicCard">
-					... sharing thoughts on design, technology and business, and building
+					... sharing thoughts on design, technology and business while building
 					a value-based Saas company.
 				</div>
 				<h2>Social Links</h2>
