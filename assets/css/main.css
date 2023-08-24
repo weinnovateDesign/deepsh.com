@@ -4,6 +4,6 @@
 
 @layer base {
 	.comicCard {
-		@apply border-4 border-light text-sm rounded-md p-6 m-4 italic;
+		@apply border-4 border-light text-sm rounded-md p-4 italic my-4;
 	}
 }
