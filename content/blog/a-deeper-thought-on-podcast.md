@@ -1,9 +1,9 @@
 ---
-title: "Is Podcast a productivity kill?"
-description: "How productive is listening to podcast"
-slug: "a-deeper-thought-on-podcast"
-publishedDate: "Sep 11, 2021"
-abstract: "Podcasts are becoming a major source of original content - entertainment or educational. But is it just a white noise or adding real value."
+title: Is Podcast a productivity kill?
+description: How productive is listening to podcast
+slug: a-deeper-thought-on-podcast
+publishedDate: Sep 11, 2021
+abstract: Podcasts are becoming a major source of original content - entertainment or educational. But is it just a white noise or adding real value.
 ---
 
 I love listening to podcasts. It makes a perfect white noise. But I mostly listen to it while commuting to work. It tends to make my commute feel productive. ... but I am not so sure.
