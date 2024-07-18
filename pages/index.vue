@@ -6,20 +6,18 @@
 		</figure>
 		<div>
 			<article class="prose prose-a:text-primary">
-				<h1>I’m a B2B Saas Product Consultant.</h1>
+				<h1>Ex-B2B Software Startup Founder.</h1>
 
 				<div class="text-sm italic">... also an aspiring comic book artist</div>
 				<p>
-					In mid-2008, I co-founded my first Saas start-up in Bangalore, India called
+					In the mid-2008, I co-founded my first Saas start-up in Bangalore, India called
 					Simplify360 (then called InRev Systems). Currently, it is one of the leading AI-driven customer
 					experience
 					engagement and analytics company in India with clients across Southeast Asia. It was acquired by a US
 					based company, Nextiva, in 2023.
 				</p>
 				<p>
-					Since 2018, I have been living in Adelaide, South Australia. I work at a B2B
-					tech startup company called BigDataCloud, and have worked with few other Saas startups in Adelaide. I
-					also run a small solo product design studio on side called DBS Design Studio.
+					Since 2018, I have been living in Adelaide, South Australia providing my expertise as a service to multiple Saas software. I also run a small solo product design studio on side called DBS Design Studio.
 				</p>
 				<p>
 					I am keen on sharing my thoughts and learnings in the area of product research, strategy, and design. I
