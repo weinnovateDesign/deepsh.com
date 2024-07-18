@@ -13,16 +13,21 @@
 					In the mid-2008, I co-founded my first Saas start-up in Bangalore, India called
 					Simplify360 (then called InRev Systems). Currently, it is one of the leading AI-driven customer
 					experience
-					engagement and analytics company in India with clients across Southeast Asia. It was acquired by a US
+					engagement and analytics company in India with clients across Southeast Asia. It was acquired by a
+					US
 					based company, Nextiva, in 2023.
 				</p>
 				<p>
-					Since 2018, I have been living in Adelaide, South Australia providing my expertise as a service to multiple Saas software. I also run a small solo product design studio on side called DBS Design Studio.
+					Since 2018, I have been living in Adelaide, South Australia providing my expertise as a service to
+					multiple Saas software. I also run a small solo product design studio on side called DBS Design
+					Studio.
 				</p>
 				<p>
-					I am keen on sharing my thoughts and learnings in the area of product research, strategy, and design. I
+					I am keen on sharing my thoughts and learnings in the area of product research, strategy, and
+					design. I
 					used to be an avid blogger during my startup phase in India, writing about various topics related to
-					social media marketing, customer experience management, data analystics, design and startups. So I am
+					social media marketing, customer experience management, data analystics, design and startups. So I
+					am
 					trying to get back to writing and sharing more...
 				</p>
 				<h2>Recent Writings</h2>
@@ -32,9 +37,9 @@
 	</div>
 </template>
 <script setup>
-const title = "B2B Saas Consultant Adelaide - Deep Sherchan";
+const title = "Ex-B2B Saas Software Founder Adelaide - Deep Sherchan";
 const metaDescription =
-	"Helping Saas business with thoughtful product research, design and strategy writings.";
+	"Helping Saas business with thoughtful product research, design and writings.";
 
 const image = "/images/deep-sherchan.png";
 useHead({
