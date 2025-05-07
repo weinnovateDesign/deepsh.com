@@ -10,28 +10,22 @@
 
 				<div class="text-sm italic">... also an aspiring comic book artist</div>
 				<p>
-					In the mid-2008, I co-founded my first Saas start-up in Bangalore, India called
-					Simplify360 (then called InRev Systems). Currently, it is one of the leading AI-driven customer
-					experience
-					engagement and analytics company in India with clients across Southeast Asia. It was acquired by a
-					US
-					based company, Nextiva, in 2023.
+					After earning my Bachelor's in Engineering, I co-founded a software company called InRev Systems
+					(later renamed Simplify360) in late 2008. I served as Director and Co-founder until 2022. In 2023,
+					the company was acquired by US-based Nextiva. Today, Simplify360 is a leading AI-driven customer
+					experience and analytics firm in India, serving clients across Southeast Asia.
 				</p>
 				<p>
-					Since 2018, I have been living in Adelaide, South Australia providing my expertise as a service to
-					multiple Saas software. I also run a small solo product design studio on side called DBS Design
-					Studio.
+					In 2018, I moved to Adelaide, South Australia, where I offered my expertise to B2B SaaS companies
+					until 2024. I'm currently exploring AI technologies to build AI agents—bringing me full circle to a
+					chatbot project I worked on in 2017.
 				</p>
 				<p>
-					I am keen on sharing my thoughts and learnings in the area of product research, strategy, and
-					design. I
-					used to be an avid blogger during my startup phase in India, writing about various topics related to
-					social media marketing, customer experience management, data analystics, design and startups. So I
-					am
-					trying to get back to writing and sharing more...
+					I'm eager to share my insights on product research, strategy, and design. During my startup journey
+					in India, I was an avid blogger, writing on topics like social media marketing, customer experience,
+					data analytics, design, and startups. Now, I'm working on getting back to writing more thoughtful
+					and well researched articles.
 				</p>
-				<h2>Recent Writings</h2>
-				<BlogPosts />
 			</article>
 		</div>
 	</div>
