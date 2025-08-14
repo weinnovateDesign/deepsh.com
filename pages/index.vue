@@ -15,7 +15,7 @@
         </figure>
         <div>
             <article class="prose prose-a:text-primary">
-                <h1>Ex-B2B Software Startup Founder.</h1>
+                <h1>Ex-B2B Software Startup Founder</h1>
 
                 <div class="text-sm italic">
                     ... also an aspiring comic book artist
@@ -23,9 +23,9 @@
                 <p>
                     After completing my Bachelor's in Engineering from Nepal, I
                     moved to Bangalore, India and co-founded a software company
-                    called InRev Systems (later renamed Simplify360) in late
-                    2008. I served as Director and Co-founder until 2022. In
-                    2023, the company was acquired by US-based Nextiva. Today,
+                    called InRev Systems in the late
+                    2008. It was later renamed to Simplify360. I served as a Director and Co-founder until 2022. In
+                    2023, the company was acquired by US-based compnay Nextiva. Today,
                     Simplify360 is a leading AI-driven customer experience and
                     analytics firm in India, serving clients across Southeast
                     Asia.
@@ -34,7 +34,7 @@
                     In 2018, I moved to Adelaide, South Australia, where I
                     offered my expertise to B2B SaaS startups until 2024. I'm
                     currently experimenting with AI technologies to build new
-                    digital experiences and functional business systems.
+                    digital experiences.
                 </p>
                 <p>
                     I'm eager to share my insights on product research,
@@ -42,7 +42,7 @@
                     was an avid blogger, writing on topics like social media
                     marketing, customer experience, data analytics, design, and
                     startups. Now, I'm working on getting back to writing more
-                    thoughtful and well researched articles.
+                    thoughtful and well researched articles. It may take time but this space is for that purpose...
                 </p>
             </article>
         </div>
