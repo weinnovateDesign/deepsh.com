@@ -1,6 +1,6 @@
 <template>
 	<div class="container mx-auto px-4 py-4 prose">
-		<ContentDoc v-slot="{ doc }">
+		<template v-if="doc">
 			<div class="comicCard">
 				{{ doc.abstract }}
 			</div>
@@ -14,7 +14,7 @@
 				</div>
 			</div>
 			<ContentRenderer :value="doc" />
-		</ContentDoc>
+		</template>
 
 		<h2>Other Articles</h2>
 		<FilterBlogPosts :url="route.params.blogSlug" />
@@ -22,4 +22,12 @@
 </template>
 <script setup>
 const route = useRoute();
+
+// Content v3 dropped <ContentDoc>; the document is fetched explicitly and
+// <ContentRenderer> is given the result. `path` replaces v2's `_path`.
+const { data: doc } = await useAsyncData(
+	() => `blog-doc-${route.path}`,
+	() => queryCollection("blog").path(route.path).first(),
+	{ watch: [() => route.path] }
+);
 </script>
