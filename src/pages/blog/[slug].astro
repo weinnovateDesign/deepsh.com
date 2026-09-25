@@ -1,0 +1,41 @@
+---
+import type { GetStaticPaths } from "astro";
+import type { CollectionEntry } from "astro:content";
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import OtherPosts from "../../components/OtherPosts.astro";
+
+// Every post is prerendered at build time. This is the whole point of the
+// migration: under Nuxt these routes were never prerendered, so live posts
+// returned an empty client-rendered shell and 404'd for crawlers.
+export const getStaticPaths: GetStaticPaths = async () => {
+	const posts = await getCollection("blog");
+	return posts.map((post) => ({
+		params: { slug: post.data.slug },
+		props: { post },
+	}));
+};
+
+// getStaticPaths props are untyped by design, so the shape is declared here.
+interface Props {
+	post: CollectionEntry<"blog">;
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<BaseLayout title={post.data.title} description={post.data.description}>
+	<div class="container mx-auto px-4 py-4 prose">
+		<div class="comicCard">{post.data.abstract}</div>
+		<h1>{post.data.title}</h1>
+		<div class="flex">
+			<div class="my-auto flex-grow h-1 bg-primary w-full mr-2 rounded-md"></div>
+			<div class="flex-none font-bold text-light">{post.data.publishedDate}</div>
+		</div>
+		<Content />
+
+		<h2>Other Articles</h2>
+		<OtherPosts currentSlug={post.data.slug} />
+	</div>
+</BaseLayout>

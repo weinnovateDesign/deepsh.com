@@ -1,0 +1,80 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import ogFallback from "../assets/deep-sherchan.png";
+import "../styles/global.css";
+
+interface Props {
+	title: string;
+	description: string;
+	image?: string;
+}
+
+const { title, description, image = ogFallback.src } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const ogImage = new URL(image, Astro.site).href;
+
+// GTM container from the old vue-gtag plugin. Kept as the standard GTM snippet:
+// the Nuxt plugin passed a GTM-* id to vue-gtag (a gtag.js library), which is a
+// mismatch — this is the loader Google actually documents for a GTM container.
+const GTM_ID = "GTM-PBPRW2W";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="icon" href="/favicon.ico" />
+		<link rel="canonical" href={canonical} />
+		<link rel="sitemap" href="/sitemap-index.xml" />
+
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta name="robots" content="index, follow" />
+		<meta name="apple-mobile-web-app-title" content={title} />
+
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonical} />
+		<meta property="og:site_name" content={title} />
+		<meta property="og:image" content={ogImage} />
+		<meta property="og:image:secure_url" content={ogImage} />
+		<meta property="og:image:alt" content={title} />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={ogImage} />
+		<meta name="twitter:image:alt" content={title} />
+
+		<script is:inline define:vars={{ GTM_ID }}>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", GTM_ID);
+		</script>
+	</head>
+	<body>
+		<noscript>
+			<iframe
+				src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+				height="0"
+				width="0"
+				style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<div class="flex flex-col justify-between min-h-screen">
+			<Header />
+			<slot />
+			<Footer />
+		</div>
+	</body>
+</html>

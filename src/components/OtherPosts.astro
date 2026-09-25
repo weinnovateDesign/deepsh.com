@@ -1,0 +1,31 @@
+---
+import { getCollection } from "astro:content";
+
+interface Props {
+	currentSlug: string;
+}
+
+const { currentSlug } = Astro.props;
+const posts = (await getCollection("blog")).filter(
+	(post) => post.data.slug !== currentSlug,
+);
+---
+
+<div class="not-prose">
+	{
+		posts.length > 0 ? (
+			posts.map((post) => (
+				<div>
+					<a
+						href={`/blog/${post.data.slug}`}
+						class="font-bold text-xl decoration-primary decoration-2 underline hover:decoration-dark hover:text-primary"
+					>
+						<h3 class="mb-4">{post.data.title}</h3>
+					</a>
+				</div>
+			))
+		) : (
+			<p>No other articles yet.</p>
+		)
+	}
+</div>

@@ -1,0 +1,39 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/logo.png";
+
+// The old site had no link to the blog anywhere — the posts were reachable only
+// by typing the URL. Adding a single nav link so the articles are discoverable
+// by readers and crawlers.
+const links = [
+	{ href: "/", label: "Home" },
+	{ href: "/blog", label: "Articles" },
+];
+const path = Astro.url.pathname;
+---
+
+<header class="py-4 text-white px-4 text-center">
+	<a href="/">
+		<Image
+			class="mx-auto border-b-4 pb-2 border-light hover:border-primary"
+			src={logo}
+			width={200}
+			height={30}
+			format="webp"
+			alt="Deep Sherchan's logo"
+		/>
+	</a>
+	<nav class="mt-3 flex justify-center gap-6 text-dark">
+		{
+			links.map(({ href, label }) => (
+				<a
+					href={href}
+					aria-current={path === href || path === `${href}/` ? "page" : undefined}
+					class="font-semibold hover:text-primary aria-[current=page]:text-primary aria-[current=page]:underline decoration-primary decoration-2"
+				>
+					{label}
+				</a>
+			))
+		}
+	</nav>
+</header>
