@@ -1,43 +1,49 @@
-# Nuxt 3 Minimal Starter
+# deepsherchan.com
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Personal site for Deep Sherchan. Built with [Astro](https://astro.build), deployed
+to GitHub Pages at **https://deepsherchan.com** on every push to `main`.
 
-## Setup
+Note: the repository is named `deepsh.com`, but that domain does not resolve.
+The live host is `deepsherchan.com` (see `public/CNAME` and `site` in
+`astro.config.mjs`).
 
-Make sure to install the dependencies:
+## Commands
 
-```bash
-# yarn
-yarn install
+| Command | Action |
+|---|---|
+| `npm install` | Install dependencies |
+| `npm run dev` | Dev server at `localhost:4321` |
+| `npm run build` | Build the static site to `./dist/` |
+| `npm run preview` | Serve the built site locally |
+| `npm run check` | Type-check (`astro check`) |
 
-# npm
-npm install
+## The blog is built but not published
 
-# pnpm
-pnpm install
-```
+The site currently publishes **only the home page** and a 404 page.
 
-## Development Server
+The blog machinery is complete and working — it was verified live before being
+withdrawn — but is deliberately unrouted so nothing is published yet:
 
-Start the development server on `http://localhost:3000`
+- `src/pages/_blog/` — the post and index templates. Astro ignores any directory
+  under `src/pages/` whose name starts with an underscore, so these generate no
+  routes at all while remaining in the repo and type-checked.
+- `src/content/blog/*.md` — two draft posts. Present but unreachable; they are
+  not in the sitemap and not crawlable.
+- `src/content.config.ts` — the collection schema (`title`, `description`,
+  `slug`, `publishedDate`, `abstract`).
+- `src/components/BlogPosts.astro`, `OtherPosts.astro` — listing components.
 
-```bash
-npm run dev
-```
+### To publish the blog later
 
-## Production
+1. `git mv src/pages/_blog src/pages/blog`
+2. Add a nav link to `/blog` in `src/components/Header.astro` — nothing links to
+   it otherwise, which is how the old Nuxt blog stayed invisible for so long.
+3. Review the draft posts in `src/content/blog/`; delete any you do not want
+   live, since every file in that directory becomes a page.
+4. `npm run check && npm run build`, confirm the routes appear, then push.
 
-Build the application for production:
+### Known cosmetic issue
 
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-# deepsh.com
+The post date renders in `text-light` (#E5E5E5) on a white background, which is
+effectively invisible. Inherited from the original Nuxt site; worth fixing
+before the blog goes live.
