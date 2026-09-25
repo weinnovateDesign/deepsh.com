@@ -1,13 +1,8 @@
+import typography from "@tailwindcss/typography";
+
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-	content: [
-		"./components/**/*.{js,vue,ts}",
-		"./layouts/**/*.vue",
-		"./pages/**/*.vue",
-		"./plugins/**/*.{js,ts}",
-		"./nuxt.config.{js,ts}",
-		"./app.vue",
-	],
+export default {
+	content: ["./src/**/*.{astro,html,js,jsx,md,mdx,ts,tsx}"],
 	theme: {
 		extend: {
 			colors: {
@@ -19,5 +14,5 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [require("@tailwindcss/typography")],
+	plugins: [typography],
 };

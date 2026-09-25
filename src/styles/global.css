@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.comicCard {
+		@apply border-4 border-light text-sm rounded-md p-4 italic my-4;
+	}
+
+	.btn-icon {
+		@apply p-2 font-semibold inline-flex items-center space-x-2 rounded-full;
+	}
+
+	.btn-icon:hover {
+		@apply bg-light;
+	}
+}
